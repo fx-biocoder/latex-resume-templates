@@ -1,0 +1,115 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% For hyperlinks
+\usepackage{hyperref}
+
+% For nice bullets in itemize
+\usepackage{enumitem}
+
+% For section headers styling
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+% Custom Commands
+\newcommand{\name}[1]{\noindent{\LARGE\bfseries #1}\\}
+\newcommand{\sectiontitle}[1]{\section*{#1}}
+
+\begin{document}
+
+% Name and contact info
+\name{John Doe}
+\noindent
+\href{mailto:john@example.com}{john@example.com} \\
+\href{https://linkedin.com/in/johndoe}{linkedin.com/in/johndoe} \\
++1 234 5678 9012 \\
+\vspace{1cm}
+
+% About Me Section
+\sectiontitle{About Me}
+\noindent
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\vspace{0.5cm}
+
+% Work Experience Section
+\sectiontitle{Work Experience}
+
+\noindent
+\textbf{Experience 1} \hfill \textit{Month Year - Present}\\
+Company 1\\
+\begin{itemize}[left=0pt]
+    \item Highlight A.
+    \item Highlight B.
+    \item Highlight C.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\noindent
+\textbf{Experience 2} \hfill \textit{Month Year - Month Year}\\
+Company 2\\
+\begin{itemize}[left=0pt]
+    \item Highlight A.
+    \item Highlight B.
+    \item Highlight C.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\noindent
+\textbf{Experience 3} \hfill \textit{Month Year - Month Year}\\
+Company 3\\
+\begin{itemize}[left=0pt]
+    \item Highlight A.
+    \item Highlight B.
+    \item Highlight C.
+\end{itemize}
+
+\vspace{0.5cm}
+
+% Education Section
+\sectiontitle{Education}
+
+\noindent
+\textbf{Your degree here} \hfill \textit{Start Year - End Year}\\
+University, Province, Country Code\\
+Additional information.
+
+\vspace{0.5cm}
+
+% Personal Projects Section
+\sectiontitle{Personal Projects}
+
+\noindent
+\textbf{Project 1} \\
+\href{https://github.com/johndoe}{github.com/johndoe/MyProject} \\
+\begin{itemize}[left=0pt]
+    \item Highlight A.
+    \item Highlight B.
+\end{itemize}
+
+\vspace{0.5cm}
+
+
+% Honors and Awards Section
+\sectiontitle{Honors and Awards}
+
+\noindent
+\textbf{Honor/Award 1} \hfill \textit{Year}\\
+Describe it here.
+
+\vspace{0.3cm}
+
+\noindent
+\textbf{Honor/Award 2} \hfill \textit{Year}\\
+Describe it here.
+
+\vspace{0.3cm}
+
+\noindent
+\textbf{Honor/Award 3} \hfill \textit{Year}\\
+Describe it here.
+\end{document}
